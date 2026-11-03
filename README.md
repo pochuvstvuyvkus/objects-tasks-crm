@@ -2,6 +2,14 @@
 
 Постановщик ставит задачи по объектам (стройкам), исполнители берут их в работу и отдают на проверку. Каждая смена статуса сохраняется в историю.
 
+**Рабочая версия:** https://pochuvstvuyvkus.github.io/objects-tasks-crm/
+
+| Роль | Email | Пароль |
+|---|---|---|
+| Постановщик (Анна Петрова) | manager@example.com | Test2026!crm |
+| Исполнитель (Иван Смирнов) | worker1@example.com | Test2026!crm |
+| Исполнитель (Олег Кузнецов) | worker2@example.com | Test2026!crm |
+
 Стек: React 19, TypeScript, Vite, Supabase (Postgres, Auth, RLS). Интерфейс на своём CSS, без UI-библиотеки.
 
 - [EXPLAIN.md](EXPLAIN.md): как устроена система, объяснение для руководителя
