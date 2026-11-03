@@ -48,5 +48,5 @@ npm run test:db
 
 `npm run build` собирает статический сайт в `dist/`. Используется HashRouter, поэтому сайт работает на любом статическом хостинге без настройки перенаправлений.
 
-- **GitHub Pages**: в репозитории есть `.github/workflows/deploy.yml`. Нужно в Settings / Pages выбрать Source «GitHub Actions» и добавить переменные `VITE_SUPABASE_URL` и `VITE_SUPABASE_ANON_KEY` в Settings / Secrets and variables / Actions / Variables.
+- **GitHub Pages**: `./scripts/deploy-pages.sh` собирает сайт с переменными из `.env` и публикует `dist/` в ветку `gh-pages`. В Settings / Pages выбрать Source «Deploy from a branch», ветка `gh-pages`. Ключ service_role для сборки не нужен, только публичный anon-ключ.
 - **Vercel / Netlify**: команда сборки `npm run build`, папка `dist`, те же две переменные окружения.
