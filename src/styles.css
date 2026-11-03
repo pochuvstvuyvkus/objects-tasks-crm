@@ -81,6 +81,7 @@ a {
   color: var(--muted);
   padding: 6px 10px;
   border-radius: 8px;
+  white-space: nowrap;
 }
 .nav a.active {
   color: var(--text);
@@ -476,6 +477,17 @@ textarea {
   }
   .user-name {
     display: none;
+  }
+  .topbar-inner {
+    gap: 8px 12px;
+  }
+  .brand {
+    flex: 1;
+  }
+  .nav {
+    order: 3;
+    flex-basis: 100%;
+    margin-left: -10px;
   }
   .card {
     padding: 16px;

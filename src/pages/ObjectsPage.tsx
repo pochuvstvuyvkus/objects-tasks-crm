@@ -54,8 +54,8 @@ export function ObjectsPage() {
                   <div className="list-title">{o.name}</div>
                   <div className="muted">{o.address}</div>
                 </div>
-                <div className="counter" title="Открытые задачи / всего">
-                  {o.openCount} / {o.taskCount}
+                <div className="counter" title="Открытые задачи из всех задач объекта">
+                  открыто {o.openCount} из {o.taskCount}
                 </div>
               </Link>
             </li>
